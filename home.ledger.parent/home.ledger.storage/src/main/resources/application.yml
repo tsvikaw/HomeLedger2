@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: home.ledger.storage
+  jpa:
+    database-platform: 'org.hibernate.dialect.MySQL5InnoDBDialect'
+    show-sql: false # change to false in PROD
+    properties:
+      hibernate:
+        show-sql: false # change to false in PROD
+        generate_statistics: false
+        use_jdbc_metadata_defaults: true
+        temp:
+          format_sql: true
+    # DEV #
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: 'create-drop'
+
+management:
+  endpoint:
+    health:
+      show-details: 'always'
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+server:
+  port: 9999

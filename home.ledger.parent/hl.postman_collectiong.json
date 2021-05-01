@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "626d2a6d-acb3-4aea-b49a-26fa69b312b0",
+		"name": "hl",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "storage",
+			"item": [
+				{
+					"name": "category",
+					"item": [
+						{
+							"name": "http://localhost:9999/category",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"\",\n        \"name\": \"category1\",\n        \"parentId\": null,\n        \"description\": \"ddd\",\n        \"createdDate\": \"2019-10-31T21:41:15.000+0000\",\n        \"enabled\": true\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9999/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9999",
+									"path": [
+										"category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:9999/category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"\",\n        \"name\": \"category1\",\n        \"parentId\": null,\n        \"description\": \"ddd\",\n        \"createdDate\": \"2019-10-31T21:41:15.000+0000\",\n        \"enabled\": true\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9999/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9999",
+									"path": [
+										"category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:9999/category/111",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"category12\",\n        \"parentId\": \"root\",\n        \"description\": \"ccc\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9999/category/111",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9999",
+									"path": [
+										"category",
+										"111"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:9999/category/7b10f466-3097-47aa-89a6-4fe0ebfdd607",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"\",\n        \"name\": \"category1\",\n        \"parentId\": null,\n        \"description\": \"ccc\",\n        \"createdDate\": \"2019-10-31T21:41:15.000+0000\",\n        \"enabled\": true\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9999/category/7b10f466-3097-47aa-89a6-4fe0ebfdd607",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9999",
+									"path": [
+										"category",
+										"7b10f466-3097-47aa-89a6-4fe0ebfdd607"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:9999/category/11",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"\",\n        \"name\": \"category1\",\n        \"parentId\": null,\n        \"description\": \"ccc\",\n        \"createdDate\": \"2019-10-31T21:41:15.000+0000\",\n        \"enabled\": true\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9999/category/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9999",
+									"path": [
+										"category",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:9999/category/descendants/78d07314-16ba-4cec-9347-9de3f51d599b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"endAmount\": 102.89,\n        \"account\": \"acccccount\",\n        \"description\": \"dfgdsf\",\n        \"endDate\": \"2019-12-16T20:30:00.0+0000\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9999/category/descendants/78d07314-16ba-4cec-9347-9de3f51d599b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9999",
+									"path": [
+										"category",
+										"descendants",
+										"78d07314-16ba-4cec-9347-9de3f51d599b"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "line",
+					"item": [
+						{
+							"name": "http://localhost:9999/line",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"\",\n        \"name\": \"category1\",\n        \"parentId\": null,\n        \"description\": \"ccc\",\n        \"createdDate\": \"2019-10-31T21:41:15.000+0000\",\n        \"enabled\": true\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9999/line",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9999",
+									"path": [
+										"line"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http:/localhost:9999/line",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"amount\": 23.45,\n        \"account\": \"acccccount\",\n        \"description\": \"ccc\",\n        \"categoryId\": \"27204ce9-bddb-43c9-bb6c-b5343c5218df\"\n}"
+								},
+								"url": {
+									"raw": "http:/localhost:9999/line",
+									"host": [
+										"http"
+									],
+									"port": "",
+									"path": [
+										"localhost:9999",
+										"line"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:9999/line/query",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"startAmount\": 102.86,\n        \"endAmount\": 102.89,\n        \"account\": \"acccccount\",\n        \"description\": \"dfgdsf\",\n        \"categories\": [{ \"id\" : \"c0c40c62-1bc9-4060-89f6-3c15d9fb448b\"\t}],\n        \"startDate\": \"2019-12-16T00:00:00.0+0000\",\n        \"endDate\": \"2019-12-16T20:30:00.0+0000\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9999/line/query",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9999",
+									"path": [
+										"line",
+										"query"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "reports",
+			"item": [
+				{
+					"name": "http://localhost:8092/lines/summaryByPeriod?month=12",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU4MzY3Njc3N30.RhXOoJyaQLPAG5egHIw3Kkr5WWNLJp1I68EwvDPxqn8BwSnvAnAxp9k7rsE0wOyHaP21AhIz_A1NxwF038ZBNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"startAmount\": 102.82,\n       \"categories\": [\n       \t{ \"id\" : \"435e8bed-f0b1-42e1-b523-29f5517be01e\", \"name\":\"fuel\"\t}\n       ],\n        \"startDate\": \"2012-12-16T00:00:00.0+0000\",\n        \"endDate\": \"2019-12-16T20:30:00.0+0000\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8092/lines/summaryByPeriod?month=12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"lines",
+								"summaryByPeriod"
+							],
+							"query": [
+								{
+									"key": "month",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8092/lines/pie",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"startAmount\": 2.82,\n       \"categories\": [\n       \t{ \"id\" : \"32c8ddc4-277e-4260-86bb-ca2e53858bdc\", \"name\":\"day to day\"\t}\n       ],\n        \"startDate\": \"2018-12-16T00:00:00.0+0000\",\n        \"endDate\": \"2019-12-16T20:30:00.0+0000\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8092/lines/pie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"lines",
+								"pie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8092/lines/query",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU5NDE5OTYyOH0.6D1mDXViop24J5OU81eAvtb2yX-cXwhYzdBKnGKTkgSBd4_5YJfQ7GgSlSGwRMA4oKmluTZn-epl7r_T5Mzbtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"startAmount\": 102.82,\n        \"endAmount\": 102.89,\n        \"account\": \"acccccount\",\n        \"description\": \"dfgdsf\",\n        \"categories\": [{ \"id\" : \"c0c40c62-1bc9-4060-89f6-3c15d9fb448b\"\t}],\n        \"startDate\": \"2019-12-16T00:00:00.0+0000\",\n        \"endDate\": \"2019-12-16T20:30:00.0+0000\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8092/lines/query",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"lines",
+								"query"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "auhentication",
+			"item": [
+				{
+					"name": "http://localhost:8080/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"password\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/users/sign-up",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"password\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/sign-up",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

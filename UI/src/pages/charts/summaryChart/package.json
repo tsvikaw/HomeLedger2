@@ -1,0 +1,6 @@
+{
+  "name": "SummaryChart",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./summaryChart.js"
+}

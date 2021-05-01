@@ -1,0 +1,50 @@
+version: '3.4'
+
+x-common-variables: &COMMON_VARS
+  STORAGE_SERVICE_URL: http://storage:9999/
+
+services:
+  db:
+    image: mysql
+    volumes:
+      - "./.data/db2:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+    ports:
+      - 42333:3306
+  storage:
+    image: hl_storage
+    ports:
+      - "9999:9999"
+    environment:
+      DB_URL: jdbc:mysql://${HOST_IP}:42333/mydb
+      DB_SCHEMA: mydb
+      DB_USER: user
+      DB_PWD: pass
+  excel:
+    image: hl_excel
+    ports:
+      - "8091:8091"
+    volumes:
+      - /Users/twiegner/Downloads:/uploads
+    environment:
+      <<: *COMMON_VARS
+  reports:
+    image: hl_reports
+    ports:
+      - "8092:8092"
+    environment:
+      <<: *COMMON_VARS
+  editing:
+    image: hl_editing
+    ports:
+      - "8093:8093"
+    environment:
+      <<: *COMMON_VARS
+  web:
+    image: hl_ui
+    ports:
+      - "3000:3000"

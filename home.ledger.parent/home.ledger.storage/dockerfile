@@ -1,0 +1,5 @@
+FROM java:8
+WORKDIR /
+COPY ./target/home.ledger.storage-1.0-SNAPSHOT.jar /
+EXPOSE 9999
+CMD java -jar home.ledger.storage-1.0-SNAPSHOT.jar

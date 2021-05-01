@@ -1,0 +1,5 @@
+FROM java:8
+WORKDIR /
+COPY ./target/home.ledger.reports-1.0-SNAPSHOT.jar /
+EXPOSE 8092
+CMD java -jar home.ledger.reports-1.0-SNAPSHOT.jar
